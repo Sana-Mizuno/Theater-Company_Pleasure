@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公演スケジュール - 劇団Pleasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">劇団Pleasure</a>
+        <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <div class="navbar__backdrop" data-navbar-backdrop></div>
+    <nav class="navbar__menu" id="main-menu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="schedule.html">公演スケジュール</a></li>
+            <li><a href="ticket.html">チケット</a></li>
+            <li><a href="cast.html">出演者紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__slide active" style="background-image:url('https://images.unsplash.com/photo-1518972559570-4ca3501278f4?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">公演スケジュール</p>
+            <h2 class="hero__title">次回の舞台予定</h2>
+            <p class="hero__subtitle">最新の上演情報とチケット販売スケジュールをこちらでご案内します。</p>
+        </div>
+    </section>
+
+    <main class="content-block">
+        <div class="container">
+            <div class="glass-panel">
+                <h2>スケジュール</h2>
+                <p>Coming Soon…</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>劇団Pleasure | 〒100-0001 東京都千代田区丸の内1-1-1</p>
+            <small>&copy; 2026 劇団Pleasure. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

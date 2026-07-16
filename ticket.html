@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チケット - 劇団Pleasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">劇団Pleasure</a>
+        <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <div class="navbar__backdrop" data-navbar-backdrop></div>
+    <nav class="navbar__menu" id="main-menu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="schedule.html">公演スケジュール</a></li>
+            <li><a href="ticket.html">チケット</a></li>
+            <li><a href="cast.html">出演者紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__slide active" style="background-image:url('https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">チケット</p>
+            <h1 class="hero__title">公演チケットのご案内</h1>
+            <p class="hero__subtitle">座席情報やチケット購入の流れ、当日のご案内をまとめて掲載しています。</p>
+        </div>
+    </section>
+
+    <main class="content-block">
+        <div class="container">
+            <h2>チケット情報</h2>
+            <p>各公演のチケットはこのページからご購入いただけます。ご予約も承っておりますので、まずはこちらをご確認ください。一般発売、会員先行、当日券などの情報も随時更新します。</p>
+            <ul class="ticket-list">
+                <li>一般席：4,200円</li>
+                <li>ペア席：7,800円</li>
+                <li>学生割引：3,000円（要学生証提示）</li>
+                <li>当日券：残席がある場合のみ販売</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>劇団Pleasure | 〒100-0001 東京都千代田区丸の内1-1-1</p>
+            <small>&copy; 2026 劇団Pleasure. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

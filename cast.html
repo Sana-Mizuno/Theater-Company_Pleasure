@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出演者紹介 - 劇団Pleasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">劇団Pleasure</a>
+        <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <div class="navbar__backdrop" data-navbar-backdrop></div>
+    <nav class="navbar__menu" id="main-menu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="schedule.html">公演スケジュール</a></li>
+            <li><a href="ticket.html">チケット</a></li>
+            <li><a href="cast.html">出演者紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__slide active" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">出演者紹介</p>
+            <h1 class="hero__title">キャストとスタッフ</h1>
+            <p class="hero__subtitle">舞台を支えるメンバーの紹介と、それぞれの役どころを掲載しています。</p>
+        </div>
+    </section>
+
+    <main class="content-block">
+        <div class="container">
+            <h2>キャスト一覧</h2>
+            <p>出演者の魅力を、役どころとともに紹介します。縦長の人物写真部分はガラス調のカードに置き換えています。</p>
+            <div class="cast-grid">
+                <article class="cast-card">
+                    <div class="cast-card__photo">Photo</div>
+                    <div class="cast-card__body">
+                        <p class="cast-card__role">主演</p>
+                        <h3 class="cast-card__name">山田 花子</h3>
+                        <p class="cast-card__description">情熱あふれるヒロインとして、物語の中心となる感情のうねりを表現します。</p>
+                    </div>
+                </article>
+                <article class="cast-card">
+                    <div class="cast-card__photo">Photo</div>
+                    <div class="cast-card__body">
+                        <p class="cast-card__role">共同主演</p>
+                        <h3 class="cast-card__name">佐藤 太郎</h3>
+                        <p class="cast-card__description">力強い演技でヒロインを支え、舞台に深みを加える重要な役どころです。</p>
+                    </div>
+                </article>
+                <article class="cast-card">
+                    <div class="cast-card__photo">Photo</div>
+                    <div class="cast-card__body">
+                        <p class="cast-card__role">演出</p>
+                        <h3 class="cast-card__name">田中 一郎</h3>
+                        <p class="cast-card__description">全体の演出を統括し、物語の空気感と舞台の見せ場を創り出します。</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>劇団Pleasure | 〒100-0001 東京都千代田区丸の内1-1-1</p>
+            <small>&copy; 2026 劇団Pleasure. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

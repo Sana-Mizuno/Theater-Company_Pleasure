@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 劇団Pleasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">劇団Pleasure</a>
+        <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <div class="navbar__backdrop" data-navbar-backdrop></div>
+    <nav class="navbar__menu" id="main-menu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="schedule.html">公演スケジュール</a></li>
+            <li><a href="ticket.html">チケット</a></li>
+            <li><a href="cast.html">出演者紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__slide active" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">お問い合わせ</p>
+            <h1 class="hero__title">ご連絡はこちら</h1>
+            <p class="hero__subtitle">出演依頼やワークショップ参加についてお気軽にお問い合わせください。</p>
+        </div>
+    </section>
+
+    <main class="content-block">
+        <div class="container">
+            <h2>連絡先</h2>
+            <p>メール：info@pleasure-theatre.jp<br>
+                電話：03-1234-5678<br>
+                受付時間：平日9:30〜17:30</p>
+            <form class="contact-form" action="mailto:info@pleasure-theatre.jp" method="post" enctype="text/plain">
+                <label class="contact-form__field">
+                    <span>お名前</span>
+                    <input type="text" name="名前" placeholder="例：山田 花子" required>
+                </label>
+                <label class="contact-form__field">
+                    <span>メールアドレス</span>
+                    <input type="email" name="メール" placeholder="例：example@example.com" required>
+                </label>
+                <label class="contact-form__field">
+                    <span>件名</span>
+                    <input type="text" name="件名" placeholder="お問い合わせ内容の概要" required>
+                </label>
+                <label class="contact-form__field">
+                    <span>メッセージ</span>
+                    <textarea name="メッセージ" rows="6" placeholder="お問い合わせ内容をこちらにご記入ください" required></textarea>
+                </label>
+                <button type="submit">送信する</button>
+                <p class="contact-form__hint">送信するとメールアプリが起動します。実際の送信にはメールクライアントが必要です。</p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>劇団Pleasure | 〒100-0001 東京都千代田区丸の内1-1-1</p>
+            <small>&copy; 2026 劇団Pleasure. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A - 劇団Pleasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">劇団Pleasure</a>
+        <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+            <span aria-hidden="true"></span>
+        </button>
+    </header>
+    <div class="navbar__backdrop" data-navbar-backdrop></div>
+    <nav class="navbar__menu" id="main-menu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="schedule.html">公演スケジュール</a></li>
+            <li><a href="ticket.html">チケット</a></li>
+            <li><a href="cast.html">出演者紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__slide active" style="background-image:url('https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Q&A</p>
+            <h1 class="hero__title">観劇と今作について</h1>
+            <p class="hero__subtitle">よくある質問に丁寧にお答えします。観劇前にぜひご覧ください。</p>
+        </div>
+    </section>
+
+    <main class="content-block">
+        <div class="container">
+            <h2>よくある質問</h2>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>Q: チケットはどこで購入できますか？</h3>
+                    <p>A: 公式サイトのお問い合わせページまたは当日会場受付にて販売いたします。詳細は各公演ページで随時更新します。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Q: 上演時間はどれくらいですか？</h3>
+                    <p>A: 今作は休憩を含めておよそ2時間15分を予定しています。開場時間の余裕をもってお越しください。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Q: 初めて観劇するのですが、服装の指定はありますか？</h3>
+                    <p>A: 特に指定はありません。カジュアルでもフォーマルでもご自由にお越しください。ただし、撮影・録音はご遠慮ください。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Q: 車椅子での観劇はできますか？</h3>
+                    <p>A: 可能です。ご来場前にお問い合わせページからご連絡いただければ、座席のご案内をいたします。</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>劇団Pleasure | 〒100-0001 東京都千代田区丸の内1-1-1</p>
+            <small>&copy; 2026 劇団Pleasure. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
