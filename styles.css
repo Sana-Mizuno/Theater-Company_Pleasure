@@ -33,6 +33,9 @@ body {
 }
 
 .navbar__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
@@ -40,6 +43,42 @@ body {
     text-transform: uppercase;
     font-size: 0.95rem;
     padding: 0.15rem 0.5rem;
+}
+
+.navbar__logo-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.navbar__brand-text {
+    display: inline-block;
+}
+
+.navbar__brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.navbar__logo-text {
+    display: inline-block;
+}
+
+.navbar__tagline {
+    display: none;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+    .navbar__logo-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* keep brand text visible on small screens so the theater name shows */
 }
 
 .navbar__toggle {
@@ -555,6 +594,53 @@ body {
     line-height: 1.8;
 }
 
+.footer__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.95rem;
+}
+
+.footer__logo-icon {
+    width: 44px;
+    height: 44px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.45rem;
+}
+
+.footer__logo-full {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .footer__logo-full {
+        width: 140px;
+    }
+}
+
+.footer__title {
+    margin: 0 0 0.15rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer__tagline {
+    margin: 0 0 0.25rem;
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.footer__address {
+    margin: 0;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
 .footer-inner {
     display: flex;
     flex-wrap: wrap;
@@ -601,6 +687,11 @@ body {
     .footer-inner {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .footer__brand {
+        margin-bottom: 0.6rem;
+        align-items: center;
     }
 }
 
@@ -713,9 +804,69 @@ body {
         padding: 0.95rem 1rem;
     }
 
+    .home-cta {
+        margin: 0 auto 2rem;
+    }
+
+    .home-cta__link {
+        width: 100%;
+        padding: 1.25rem 1.2rem;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    .home-cta__link span {
+        font-size: 0.82rem;
+        letter-spacing: 0.18em;
+    }
+
+    .home-cta__link strong {
+        font-size: 1rem;
+    }
+
     .footer-inner {
         width: 100%;
         justify-content: center;
         text-align: center;
+    }
+}
+
+/* Extra small screens: stack footer brand and center everything */
+@media (max-width: 420px) {
+    .navbar__logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navbar {
+        padding: 0.6rem 0.75rem;
+    }
+
+    .hero__content {
+        bottom: 1.6rem;
+        padding: 0 0.9rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        text-align: center;
+    }
+
+    .footer__brand {
+        flex-direction: column;
+        gap: 0.45rem;
+        align-items: center;
+    }
+
+    .footer__address {
+        font-size: 0.88rem;
+    }
+
+    .home-cta__link {
+        padding: 0.95rem 1rem;
     }
 }
